@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "hello hello form"
+    "hello hello form";
+}
+.contact {
+  background-color: aqua;
+  grid-area: hello;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.form {
+  grid-area: form;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
